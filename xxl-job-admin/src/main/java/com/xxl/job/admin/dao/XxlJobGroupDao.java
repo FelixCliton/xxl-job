@@ -16,6 +16,8 @@ public interface XxlJobGroupDao {
 
     public List<XxlJobGroup> findByAddressType(@Param("addressType") int addressType);
 
+    public XxlJobGroup findByAppName(@Param("appName") String appName);
+
     public int save(XxlJobGroup xxlJobGroup);
 
     public int update(XxlJobGroup xxlJobGroup);
